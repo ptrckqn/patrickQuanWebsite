@@ -7,6 +7,10 @@ a:hover{
   color: #545454;
 }
 
+.aboutText{
+  text-align: justify;
+}
+
 body{
   background-color: #ffffff;
   background-size: cover;
