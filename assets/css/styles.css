@@ -93,6 +93,10 @@ html{
   overflow-x: hidden;
 }
 
+img{
+  text-align: center;
+}
+
 .img-fluid{
 opacity: 1;
 display: block;
