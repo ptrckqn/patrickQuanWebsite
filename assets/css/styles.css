@@ -52,9 +52,14 @@ body{
 
 .footer{
   background-color: #4e4e4e;
-  color: white;
+  color: #f0f0f0;
   text-align: center;
   padding: 0.5%;
+}
+
+.footerIcon{
+  margin-top: 2%;
+  color: #f0f0f0;
 }
 
 h1{
@@ -141,7 +146,7 @@ margin: 10%;
 
 
 #navbarNavAltMarkup .active{
-  color: black;
+  color: white;
 }
 
 p{
@@ -405,6 +410,8 @@ p{
         transform: rotate(144deg);
     }
 }
+
+/* 85% */
 @keyframes loading-5{
     0%{
         -webkit-transform: rotate(0deg);
