@@ -29,5 +29,3 @@ $(window).scroll(function(){
 	var progressBar = new ProgressBar.Circle('#container', {
 	    strokeWidth: 2
 	});
-
-//Enabling tooltips
