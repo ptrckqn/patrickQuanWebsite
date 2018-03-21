@@ -1,17 +1,19 @@
 
 //Smooth scrolling
 $(document).ready(function() {
-		$('a[href]').bind('click', function(e) {
-
-				var target = $(this).attr("href");
-				$('html, body').stop().animate({
-						scrollTop: $(target).offset().top - 57 //Offset of scroll
-				}, 800, function() {
-						location.hash = target;
-				});
-
-				return false;
-		});
+		// $('a[href]').bind('click', function(e) {
+		// 	e.preventDefault();
+		// 		var target = $(this).attr("href");
+		// 		$('html, body').stop().animate({
+		//
+		// 				scrollTop: $(target).offset().top - 57 //Offset of scroll
+		// 		}, 800, function() {
+		// 				location.hash = target;
+		// 		});
+		//
+		// 		return false;
+		// });
+		setBindings();
 });
 
 //Revealing objects as the pages scrolls
@@ -29,3 +31,13 @@ $(window).scroll(function(){
 	var progressBar = new ProgressBar.Circle('#container', {
 	    strokeWidth: 2
 	});
+
+	function setBindings(){
+    $(".nav-item").click(function(event){
+        event.preventDefault();
+        var sectionId = $(this).attr('href');
+        $("html, body").animate({
+            scrollTop: ($(sectionId).offset().top)-($(".navbar-expand-lg").outerHeight())
+        }, 800);
+    });
+};
