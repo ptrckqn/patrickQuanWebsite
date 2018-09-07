@@ -144,7 +144,8 @@ margin: 10%;
 
 
 .navbar-light{
-  background-color: #f0f0f0;
+  /* background-color: #f0f0f0; */
+  background-color: white;
   padding:0;
 }
 
