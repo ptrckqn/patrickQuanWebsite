@@ -367,7 +367,7 @@ p{
     border-color: #049dff;
 }
 .progress.blue .progress-left .progress-bar{
-    animation: loading-2 0.2s linear forwards 1.8s;
+    animation: loading-3 1s linear forwards 1.8s;
 }
 
 .progress.orange .progress-bar{
@@ -393,6 +393,13 @@ p{
     border-color: #1abc9c;
 }
 .progress.green .progress-left .progress-bar{
+    animation: loading-2 1.2s linear forwards 1.8s;
+}
+
+.progress.red .progress-bar{
+    border-color: #f72525;
+}
+.progress.red .progress-left .progress-bar{
     animation: loading-2 1.2s linear forwards 1.8s;
 }
 
